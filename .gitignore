@@ -1,0 +1,68 @@
+# .gitignore para Evho
+
+### Python ###
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py,cover
+.env/
+venv/
+env/
+.venv/
+pip-log.txt
+*.egg-info/
+.installed.cfg
+*.egg
+dist/
+build/
+
+### Docker ###
+docker-compose.override.yml
+.dockerignore
+# Ignora volúmenes locales (pero no el compose principal)
+/data/
+
+### Environment ###
+.env
+.env.local
+.env.development
+.env.production
+secrets.json
+*.env
+
+### IDEs ###
+.vscode/
+.idea/
+*.iml
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+### Logs ###
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Build ###
+/dist/
+/node_modules/
+/web-frontend/.next/  # Si usas Next.js después
+
+### Testing ###
+.coverage
+htmlcov/
+.pytest_cache/
+
+### OS Generated ###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+[Tt]humbs.db
+Desktop.ini
